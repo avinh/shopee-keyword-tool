@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Shopee Keyword Extension",
+    "version": "1.0",
+    "description": "Get cookie",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+        "<all_urls>"
+      ],
+    "permissions": [
+      "tabs",
+      "cookies"
+    ]
+  }
