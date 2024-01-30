@@ -215,6 +215,7 @@ func main() {
 
 	if len(listProducts) == 0 {
 		fmt.Println("Không tìm thấy sản phẩm nào!!!")
+		bufio.NewReader(os.Stdin).ReadBytes('\n')
 		return
 	}
 
@@ -222,6 +223,8 @@ func main() {
 
 	if len(listKeywordHint) == 0 {
 		fmt.Println("Không tìm thấy keyword nào phù hợp!!!")
+		// wait for user press enter
+		bufio.NewReader(os.Stdin).ReadBytes('\n')
 		return
 	}
 
@@ -233,4 +236,6 @@ func main() {
 	}
 
 	fmt.Println("Đã xử lý xong!!!")
+	// wait for user press enter
+	bufio.NewReader(os.Stdin).ReadBytes('\n')
 }
